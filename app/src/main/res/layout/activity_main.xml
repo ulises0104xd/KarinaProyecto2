@@ -18,13 +18,57 @@
             android:layout_marginHorizontal="8dp"
             app:cardBackgroundColor="#A60101">
 
-            <ImageView
-                android:layout_width="88dp"
-                android:layout_height="88dp"
-                android:src="@drawable/ihateinhere"
-                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-            </ImageView>
+                <ImageView
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/ihateinhere"
+
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I hate in here"
+                    android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                    android:textColor="#FFFFFF">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+                    android:textColor="#FFFFFF"
+                    android:textAppearance="?attr/textAppearanceBodySmall"
+                    android:maxLines="3"
+                    android:ellipsize="end">
+
+                </TextView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Peru"
+                    app:icon="@drawable/ic_biblioteca"
+                    android:backgroundTint="#FF0000">
+                </com.google.android.material.button.MaterialButton>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bombardear"
+                    android:textColor="#FFFFFF"
+                    style="@style/Widget.Material3.Button.TextButton">
+
+                </com.google.android.material.button.MaterialButton>
+            </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
